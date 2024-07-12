@@ -165,6 +165,12 @@ namespace System.IO.Abstractions
             file.FileSystem.File.WriteAllText(file.FullName, contents);
         }
 
+        /// <inheritdoc cref="IPath.GetFileNameWithoutExtension(string?)"/>
+        public static string GetFileNameWithoutExtension(this IFileInfo file)
+        {
+            return file.FileSystem.Path.GetFileNameWithoutExtension(file.Name);
+        }
+
         private static FileMode GetWriteFileMode(IFileInfo info, bool overwrite)
         {
             if (!overwrite && info.Exists)
