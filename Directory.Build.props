@@ -19,7 +19,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="TestableIO.System.IO.Abstractions" Version="17.*" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.133">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
